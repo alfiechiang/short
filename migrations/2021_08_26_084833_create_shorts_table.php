@@ -13,6 +13,8 @@ class CreateShortsTable extends Migration
     {
         Schema::create('shorts', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('url')->unique();
+            $table->string('shorturl')->unique();
             $table->timestamps();
         });
     }
