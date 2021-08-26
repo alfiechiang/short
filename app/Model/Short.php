@@ -13,13 +13,13 @@ class Short extends Model
      *
      * @var string
      */
-    protected $table = 'Short';
+    protected $table = 'shorts';
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-    protected $fillable = [];
+    protected $fillable = ['url','shorturl'];
     /**
      * The attributes that should be cast to native types.
      *

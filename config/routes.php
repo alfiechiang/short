@@ -16,3 +16,8 @@ Router::addRoute(['GET', 'POST', 'HEAD'], '/', 'App\Controller\IndexController@i
 Router::get('/favicon.ico', function () {
     return '';
 });
+
+Router::post('/short', 'App\Controller\ShortController@create');
+Router::get('/divert', 'App\Controller\ShortController@divert');
+
+//Router::post('/short','App\Controller\ShortController@create');
